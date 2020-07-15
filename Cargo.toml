@@ -1,0 +1,22 @@
+[package]
+name = "new_rust_simulation"
+version = "0.1.0"
+authors = ["Abdelrahman Badran <abdoalaa980@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.7.3"
+file = "1.1.2"
+crossbeam-channel = "0.4.2"
+indexed-line-reader = "0.2.1"
+scheduled-thread-pool = "0.2.4"
+crossbeam = "0.7.3"
+
+[dev-dependencies]
+criterion = "0.3.2"
+
+[[bench]]
+name = "my_benchmark"
+harness = false
